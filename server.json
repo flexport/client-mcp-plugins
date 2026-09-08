@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "com.flexport.client-mcp/mcp",
+  "title": "Flexport MCP Server",
+  "description": "Search shipments, get instant freight rate quotes, and book freight directly from your AI assistant.",
+  "repository": {
+    "url": "https://github.com/flexport/client-mcp-plugins",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.flexport.com/mcp"
+    }
+  ]
+}
