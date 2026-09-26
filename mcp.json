@@ -1,7 +1,6 @@
 {
   "mcpServers": {
     "flexport": {
-      "type": "http",
       "url": "https://mcp.flexport.com/mcp"
     }
   }
