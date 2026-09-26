@@ -1,19 +1,62 @@
-# client-mcp-plugins
+# Flexport MCP plugin
 
-Plugin manifests and skills that let Claude and OpenAI clients use the Flexport MCP server ([`client-mcp`](https://github.com/flexport/client-mcp), private) for shipment tracking and freight rate/booking workflows.
+Flexport's MCP (Model Context Protocol) server lets AI assistants and agentic tools connect to your
+[Flexport](https://www.flexport.com) account to act on your behalf: looking up shipments, checking
+rates, searching your network, and booking freight, using natural language.
 
-This repo contains only manifests and workflow documentation ("skills") — the MCP server implementation lives in the private `client-mcp` repo and is not affected by this repo's visibility.
+This plugin adds Flexport's official hosted MCP server. It does not install or execute a local
+binary. On first connection, your client opens Flexport sign-in in the browser; no API key or
+environment variable is required.
 
-## Structure
+## Prerequisites
 
-- `server.json` — generic MCP server registration (per the [MCP server schema](https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json)).
-- `.mcp.json` — Claude Desktop/Code local server registration.
-- `.claude-plugin/plugin.json` — Claude Code plugin manifest.
-- `skills/` — standalone-value capabilities: shipment tracking, instant price quoting, quote-status lookup.
-- `workflow-skills/` — the write operations that require a specific multi-step call sequence: requesting a custom rate, booking an instant rate, and booking without a rate.
+- An active Flexport account.
+- **MCP enabled for your organization by an admin** at
+  [app.flexport.com/integrations/mcp-connection](https://app.flexport.com/integrations/mcp-connection).
+  If you connect and see an error that MCP has not been enabled, an admin needs to turn it on there.
 
-Skills only cover tools and tool clusters that provide value on their own — pure lookup helpers (port/address/HS-code/company-entity search) are documented as steps inside the relevant workflow-skill instead of getting a standalone skill.
+## Installation
+
+Install **Flexport** from your AI client's plugin marketplace, such as the
+[Cursor Marketplace](https://cursor.com/marketplace).
+
+For clients without a Flexport plugin, add the server manually if the client supports remote
+(Streamable HTTP) MCP servers:
+
+```json
+{
+  "mcpServers": {
+    "flexport": {
+      "url": "https://mcp.flexport.com/mcp"
+    }
+  }
+}
+```
+
+Connections are initiated from the agent and tied to your individual Flexport account and user role.
+When you're redirected, sign in with your Flexport account to authorize — the whole process takes
+about a minute.
+
+## Documentation
+
+- [Overview](https://apidocs.flexport.com/2023-07-01/tag/Overview/)
+- [Setup](https://apidocs.flexport.com/2023-07-01/tag/Setup/)
+- [Permissions](https://apidocs.flexport.com/2023-07-01/tag/Permissions/)
+- [Tools](https://apidocs.flexport.com/2023-07-01/tag/MCP-Tools/)
+
+## Support and resources
+
+- [Flexport](https://www.flexport.com)
+- [Flexport Privacy Policy](https://www.flexport.com/privacy/)
+- [Flexport Software Visibility Terms and Conditions](https://www.flexport.com/terms-and-conditions/software-visibility-terms-and-conditions/)
+- Support: contact your Flexport account team
 
 ## Contributing
 
-Changes go through a pull request; only `emerald` and `commerce-foundation` team members can merge to `main`. External pull requests aren't accepted — please open an issue instead.
+External pull requests aren't accepted — please open an issue instead.
+
+## License
+
+The contents of this repository are licensed under the [BSD 3-Clause License](LICENSE). Use of the
+hosted Flexport MCP service is governed separately by Flexport's
+[Software Visibility Terms and Conditions](https://www.flexport.com/terms-and-conditions/software-visibility-terms-and-conditions/).

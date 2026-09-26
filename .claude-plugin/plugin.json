@@ -1,8 +1,0 @@
-{
-  "name": "flexport",
-  "description": "Search shipments, get instant freight rate quotes, and book freight directly from Claude.",
-  "version": "0.1.0",
-  "author": {
-    "name": "Flexport"
-  }
-}

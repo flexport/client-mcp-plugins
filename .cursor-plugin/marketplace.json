@@ -1,0 +1,16 @@
+{
+  "name": "flexport-plugins",
+  "owner": {
+    "name": "Flexport"
+  },
+  "metadata": {
+    "description": "Official Flexport plugins"
+  },
+  "plugins": [
+    {
+      "name": "flexport",
+      "source": "./",
+      "description": "Connect your Flexport account via the hosted MCP at mcp.flexport.com/mcp: look up shipments, check rates, search your network, and book freight using natural language."
+    }
+  ]
+}
