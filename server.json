@@ -7,7 +7,7 @@
     "url": "https://github.com/flexport/client-mcp-plugins",
     "source": "github"
   },
-  "version": "0.1.0",
+  "version": "1.0.0",
   "remotes": [
     {
       "type": "streamable-http",
