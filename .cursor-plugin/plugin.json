@@ -8,6 +8,7 @@
   "homepage": "https://www.flexport.com",
   "repository": "https://github.com/flexport/client-mcp-plugins",
   "license": "BSD-3-Clause",
+  "logo": "assets/logo.png",
   "keywords": [
     "flexport",
     "flexport mcp",

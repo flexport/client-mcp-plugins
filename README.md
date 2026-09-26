@@ -123,6 +123,7 @@ privacy policies of the services you use. Requests are rate limited per user and
 
 - `.cursor-plugin/plugin.json` — Cursor plugin manifest.
 - `mcp.json` — MCP server definition for the plugin.
+- `assets/logo.png` — plugin logo.
 - `server.json` — generic MCP server registration (per the [MCP server schema](https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json)).
 
 ## Support and resources
