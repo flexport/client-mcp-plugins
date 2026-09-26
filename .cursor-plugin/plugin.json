@@ -10,6 +10,7 @@
   "repository": "https://github.com/flexport/client-mcp-plugins",
   "license": "BSD-3-Clause",
   "logo": "assets/logo.png",
+  "mcpServers": "./.mcp.json",
   "keywords": [
     "flexport",
     "flexport mcp",
