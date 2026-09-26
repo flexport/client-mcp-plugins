@@ -57,6 +57,6 @@ External pull requests aren't accepted — please open an issue instead.
 
 ## License
 
-The contents of this repository are licensed under the [BSD 3-Clause License](LICENSE). Use of the
+The contents of this repository are licensed under the [Apache License 2.0](LICENSE). Use of the
 hosted Flexport MCP service is governed separately by Flexport's
 [Software Visibility Terms and Conditions](https://www.flexport.com/terms-and-conditions/software-visibility-terms-and-conditions/).
