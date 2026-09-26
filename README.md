@@ -19,7 +19,9 @@ environment variable is required.
 
 ## Installation
 
-Install **Flexport** from the [Cursor Marketplace](https://cursor.com/marketplace).
+Install **Flexport** from your AI client's plugin marketplace, such as the
+[Cursor Marketplace](https://cursor.com/marketplace). For clients without a Flexport plugin, add
+`https://mcp.flexport.com/mcp` as a remote (streamable HTTP) MCP server.
 
 Connections are initiated from the agent and tied to your individual Flexport account and user role.
 When you're redirected, sign in with your Flexport account to authorize — the whole process takes
