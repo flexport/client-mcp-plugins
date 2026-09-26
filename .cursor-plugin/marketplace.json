@@ -10,7 +10,7 @@
     {
       "name": "flexport",
       "source": "./",
-      "description": "Connect your Flexport account via the hosted MCP at mcp.flexport.com: look up shipments, check rates, search your network, and book freight using natural language."
+      "description": "Connect your Flexport account via the hosted MCP at mcp.flexport.com/mcp: look up shipments, check rates, search your network, and book freight using natural language."
     }
   ]
 }

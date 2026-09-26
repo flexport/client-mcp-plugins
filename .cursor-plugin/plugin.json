@@ -1,8 +1,8 @@
 {
   "name": "flexport",
   "displayName": "Flexport",
-  "description": "Connect your Flexport account via the hosted MCP at mcp.flexport.com: look up shipments, check rates, search your network, and book freight using natural language. Requires MCP enabled for your organization by a Flexport admin.",
-  "version": "0.1.0",
+  "description": "Connect your Flexport account via the hosted MCP at mcp.flexport.com/mcp: look up shipments, check rates, search your network, and book freight using natural language. Requires MCP enabled for your organization by a Flexport admin.",
+  "version": "1.0.0",
   "author": {
     "name": "Flexport"
   },
