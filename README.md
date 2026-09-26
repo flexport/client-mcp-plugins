@@ -121,6 +121,7 @@ privacy policies of the services you use. Requests are rate limited per user and
 
 ## Repository contents
 
+- `.cursor-plugin/marketplace.json` — Cursor marketplace manifest listing the plugin.
 - `.cursor-plugin/plugin.json` — Cursor plugin manifest.
 - `mcp.json` — MCP server definition for the plugin.
 - `assets/logo.png` — plugin logo.
