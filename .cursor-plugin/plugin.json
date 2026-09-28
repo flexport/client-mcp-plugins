@@ -10,7 +10,6 @@
   "repository": "https://github.com/flexport/client-mcp-plugins",
   "license": "Apache-2.0",
   "logo": "assets/logo.png",
-  "mcpServers": "./.mcp.json",
   "keywords": [
     "flexport",
     "flexport mcp",
